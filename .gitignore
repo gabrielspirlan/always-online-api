@@ -1,0 +1,16 @@
+# Ignora o node_modules (dependências)
+node_modules/
+
+# Ignora o arquivo .env (variáveis sensíveis)
+.env
+
+# Ignora arquivos de log
+*.log
+
+# Ignora o diretório de builds temporários (se usar)
+dist/
+build/
+
+# Ignora arquivos do sistema operacional
+.DS_Store  # macOS
+Thumbs.db  # Windows

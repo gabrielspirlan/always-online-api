@@ -1,6 +1,7 @@
 const express = require('express')
 const axios = require('axios')
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
+
 
 const app = express();
 const port = 3000;

@@ -16,8 +16,12 @@ async function manterAPIAtiva(api) {
     }, 300000);
 }
 
+app.get("/", (req,res) => {
+    res.send("<h1>ALWAYS ONLINE API WORKING!</h1>");
+})
+
 app.listen(port, () => {
-    console.log("Servidor iniciado");
+    console.log("Servidor iniciado na porta: ", port);
     if (process.env.APP_01) {
         console.log("API 01")
         manterAPIAtiva(process.env.APP_01);
